@@ -1,0 +1,1 @@
+export { default as UiCol } from './ui-col.vue';

@@ -1,6 +1,8 @@
 import App from './App.vue'
 import { createSSRApp } from 'vue'
 import { createPinia } from 'pinia'
+import UI from '@ui/components';
+import '@ui/theme/default/index.css'
 
 const pinia = createPinia()
 
@@ -10,5 +12,6 @@ const pinia = createPinia()
 export function createApp() {
   const app = createSSRApp(App)
   app.use(pinia)
+  app.use(UI)
   return { app }
 }

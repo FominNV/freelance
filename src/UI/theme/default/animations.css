@@ -1,0 +1,166 @@
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes popover-slide-in-top-anim {
+  0% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popover-slide-out-top-anim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce-in-anim {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-out-anim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-left-anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fill-to-right-anim {
+  to {
+    width: 100%;
+  }
+}
+
+/** vue transition classes */
+
+.bounce-enter-active {
+  animation: bounce-in-anim 0.4s;
+}
+
+.bounce-leave-active {
+  animation: bounce-out-anim 0.2s;
+}
+
+@keyframes fade-anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-scale-anim {
+  0% {
+    scale: 0.95;
+    opacity: 0;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/** vue transition classes */
+
+.fade-enter-active {
+  animation: fade-anim 0.3s;
+}
+
+.fade-leave-active {
+  animation: fade-anim reverse 0.3s;
+}
+
+.fade-scale-enter-active {
+  animation: fade-scale-anim 0.2s;
+}
+
+.fade-scale-leave-active {
+  animation: fade-scale-anim reverse 0.2s;
+}
+
+@keyframes slide-in-down-anim {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-out-down-anim {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+/** vue transition classes */
+
+.slide-in-down-enter-active {
+  animation: slide-in-down-anim 0.2s;
+}
+
+.slide-in-down-leave-active {
+  animation: slide-out-down-anim 0.2s;
+}

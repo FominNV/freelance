@@ -1,0 +1,169 @@
+:root {
+  /** Типографика **/
+  --primary-font-family: "Golos", Arial, serif;
+
+  /** Title **/
+  /** Используется для выделения ключевой информации — общий заголовок страниц, поп-апов **/
+
+  --title-sm-font-size: 24px;
+  --title-sm-font-family: var(--primary-font-family);
+  --title-sm-line-height: 32px;
+  --title-sm-font-weight: 600;
+  --title-sm-letter-spacing: 0%;
+
+  /** subtitle **/
+  /** Используется для выделения ключевой информации — заголовки внутри страницы **/
+
+  --subtitle-xs-font-size: 12px;
+  --subtitle-xs-font-family: var(--primary-font-family);
+  --subtitle-xs-line-height: 16px;
+  --subtitle-xs-font-weight: 500;
+  --subtitle-xs-letter-spacing: 0%;
+
+  --subtitle-sm-font-size: 14px;
+  --subtitle-sm-font-family: var(--primary-font-family);
+  --subtitle-sm-line-height: 18px;
+  --subtitle-sm-font-weight: 500;
+  --subtitle-sm-letter-spacing: 0%;
+
+  --subtitle-md-font-size: 16px;
+  --subtitle-md-font-family: var(--primary-font-family);
+  --subtitle-md-line-height: 21px;
+  --subtitle-md-font-weight: 600;
+  --subtitle-md-letter-spacing: 0%;
+
+  --subtitle-lg-font-size: 18px;
+  --subtitle-lg-font-family: var(--primary-font-family);
+  --subtitle-lg-line-height: 23px;
+  --subtitle-lg-font-weight: 600;
+  --subtitle-lg-letter-spacing: 0%;
+
+  /** Paragraph **/
+  /** Основной стиль текста **/
+
+  --paragraph-xs-font-size: 11px;
+  --paragraph-xs-font-family: var(--primary-font-family);
+  --paragraph-xs-line-height: 15px;
+  --paragraph-xs-font-weight: 400;
+  --paragraph-xs-letter-spacing: 0%;
+
+  --paragraph-sm-font-size: 12px;
+  --paragraph-sm-font-family: var(--primary-font-family);
+  --paragraph-sm-line-height: 16px;
+  --paragraph-sm-font-weight: 400;
+  --paragraph-sm-letter-spacing: 0%;
+
+  --paragraph-md-font-size: 16px;
+  --paragraph-md-font-family: var(--primary-font-family);
+  --paragraph-md-line-height: 22px;
+  --paragraph-md-font-weight: 400;
+  --paragraph-md-letter-spacing: 0%;
+
+  /** Action **/
+  /** Текст в интерактивных элементах **/
+
+  --action-sm-font-size: 12px;
+  --action-sm-font-family: var(--primary-font-family);
+  --action-sm-line-height: 16px;
+  --action-sm-font-weight: 500;
+  --action-sm-letter-spacing: 2%;
+
+  --action-md-font-size: 14px;
+  --action-md-font-family: var(--primary-font-family);
+  --action-md-line-height: 18px;
+  --action-md-font-weight: 500;
+  --action-md-letter-spacing: 0%;
+
+  --action-lg-font-size: 16px;
+  --action-lg-font-family: var(--primary-font-family);
+  --action-lg-line-height: 20px;
+  --action-lg-font-weight: 500;
+  --action-lg-letter-spacing: 0%;
+}
+
+.ui-title,
+.ui-subtitle,
+.ui-paragraph,
+.ui-action {
+  font-family: var(--primary-font-family);
+}
+
+.ui-title--sm {
+  font-size: var(--title-sm-font-size);
+  line-height: var(--title-sm-line-height);
+  font-family: var(--title-sm-font-family);
+  font-weight: var(--title-sm-font-weight);
+  letter-spacing: var(--title-sm-letter-spacing);
+}
+
+.ui-subtitle--xs {
+  font-size: var(--subtitle-xs-font-size);
+  line-height: var(--subtitle-xs-line-height);
+  font-family: var(--subtitle-xs-font-family);
+  font-weight: var(--subtitle-xs-font-weight);
+  letter-spacing: var(--subtitle-xs-letter-spacing);
+}
+
+.ui-subtitle--sm {
+  font-size: var(--subtitle-sm-font-size);
+  line-height: var(--subtitle-sm-line-height);
+  font-family: var(--subtitle-sm-font-family);
+  font-weight: var(--subtitle-sm-font-weight);
+  letter-spacing: var(--subtitle-sm-letter-spacing);
+}
+
+.ui-subtitle--md {
+  font-size: var(--subtitle-md-font-size);
+  line-height: var(--subtitle-md-line-height);
+  font-family: var(--subtitle-md-font-family);
+  font-weight: var(--subtitle-md-font-weight);
+  letter-spacing: var(--subtitle-md-letter-spacing);
+}
+
+.ui-subtitle--lg {
+  font-size: var(--subtitle-lg-font-size);
+  line-height: var(--subtitle-lg-line-height);
+  font-family: var(--subtitle-lg-font-family);
+  font-weight: var(--subtitle-lg-font-weight);
+  letter-spacing: var(--subtitle-lg-letter-spacing);
+}
+
+.ui-paragraph--xs {
+  font-size: var(--paragraph-xs-font-size);
+  line-height: var(--paragraph-xs-line-height);
+  font-family: var(--paragraph-xs-font-family);
+  font-weight: var(--paragraph-xs-font-weight);
+  letter-spacing: var(--paragraph-xs-letter-spacing);
+}
+
+.ui-paragraph--sm {
+  font-size: var(--paragraph-sm-font-size);
+  line-height: var(--paragraph-sm-line-height);
+  font-family: var(--paragraph-sm-font-family);
+  font-weight: var(--paragraph-sm-font-weight);
+  letter-spacing: var(--paragraph-sm-letter-spacing);
+}
+
+.ui-paragraph--md {
+  font-size: var(--paragraph-md-font-size);
+  line-height: var(--paragraph-md-line-height);
+  font-family: var(--paragraph-md-font-family);
+  font-weight: var(--paragraph-md-font-weight);
+  letter-spacing: var(--paragraph-md-letter-spacing);
+}
+
+.ui-action--sm {
+  font-size: var(--action-sm-font-size);
+  line-height: var(--action-sm-line-height);
+  font-family: var(--action-sm-font-family);
+  font-weight: var(--action-sm-font-weight);
+  letter-spacing: var(--action-sm-letter-spacing);
+}
+
+.ui-action--md {
+  font-size: var(--action-md-font-size);
+  line-height: var(--action-md-line-height);
+  font-family: var(--action-md-font-family);
+  font-weight: var(--action-md-font-weight);
+  letter-spacing: var(--action-md-letter-spacing);
+}

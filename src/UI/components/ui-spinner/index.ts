@@ -1,0 +1,1 @@
+export { default as UiSpinner } from './ui-spinner.vue';

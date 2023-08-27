@@ -1,0 +1,1 @@
+export type ClassPropsType = Array<string | Array<string> | object>;

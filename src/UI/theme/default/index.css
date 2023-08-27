@@ -1,0 +1,112 @@
+@import "./animations.css";
+@import "./reset.css";
+@import "./typography.css";
+@import "./grid.css";
+@import "./scroll.css";
+
+:root {
+  /* Цвета для текста и иконок */
+  --color-text-primary: #1f242b;
+  --color-text-light: rgba(31, 36, 43, 0.3);
+  --color-text-placeholder: rgba(31, 36, 43, 0.4);
+  --color-text-secondary: rgba(31, 36, 43, 0.6);
+  --color-text-inversion: #ffffff;
+  --color-text-inversion-secondary: rgba(255, 255, 255, 0.8);
+
+  /** Neutral цвета **/
+  --color-neutral-0: #ffffff;
+  --color-neutral-0-alpha-1: rgba(255, 255, 255, 0.2);
+  --color-neutral-0-alpha-2: rgba(255, 255, 255, 0.6);
+  --color-neutral-0-alpha-3: rgba(255, 255, 255, 0.8);
+  --color-neutral-100: #f7f7fa;
+  --color-neutral-200: #ededf3;
+  --color-neutral-300: #d6d8df;
+  --color-neutral-400: #98989d;
+  --color-neutral-900: #1f242b;
+  --color-neutral-900-alpha-1: rgba(31, 36, 43, 0.4);
+  --color-neutral-900-alpha-2: rgba(31, 36, 43, 0.92);
+
+  /** Primary цвета */
+  --color-primary-50: #f9fafe;
+  --color-primary-100: #e9e9fc;
+  --color-primary-300: #7b7ceb;
+  --color-primary-400: #4f51e5;
+  --color-primary-500: #2325de;
+  --color-primary-600: #1c1eb2;
+
+  /** Error цвета */
+  --color-error-100: #ffdada;
+  --color-error-300: #ff9191;
+  --color-error-500: #ff4040;
+  --color-error-600: #d23939;
+
+  /** Success цвета */
+  --color-success-100: #dff5e8;
+  --color-success-300: #5ad38d;
+  --color-success-500: #0eb956;
+  --color-success-600: #0b9445;
+
+  /** Warning цвета */
+  --color-warning-100: #ffecd1;
+  --color-warning-300: #ffc576;
+  --color-warning-500: #ff9f1a;
+  --color-warning-600: #d18215;
+
+  /** Cyan цвета */
+  --color-cyan-100: #c3eef2;
+  --color-cyan-300: #67c7cf;
+  --color-cyan-500: #0fa3b1;
+  --color-cyan-600: #0c828e;
+
+  /** Purple цвета */
+  --color-purple-100: #e3d3f8;
+  --color-purple-300: #ac7beb;
+  --color-purple-500: #7523de;
+  --color-purple-600: #5e1cb2;
+
+  /** Orange цвета */
+  --color-orange-100: #feddcd;
+  --color-orange-300: #fd9a6a;
+  --color-orange-500: #fb5607;
+  --color-orange-600: #c94506;
+
+  /** Отступы **/
+  /** Базовая единица **/
+  --spacing-1: 8px;
+
+  --spacing-0: 0;
+  --spacing-0-25: calc(0.25 * var(--spacing-1));
+  --spacing-0-5: calc(0.5 * var(--spacing-1));
+  --spacing-0-75: calc(0.75 * var(--spacing-1));
+  --spacing-1-5: calc(1.5 * var(--spacing-1));
+  --spacing-2: calc(2 * var(--spacing-1));
+  --spacing-2-5: calc(2.5 * var(--spacing-1));
+  --spacing-3: calc(3 * var(--spacing-1));
+  --spacing-4: calc(4 * var(--spacing-1));
+  --spacing-5: calc(5 * var(--spacing-1));
+  --spacing-6: calc(6 * var(--spacing-1));
+  --spacing-8: calc(8 * var(--spacing-1));
+  --spacing-9: calc(9 * var(--spacing-1));
+  --spacing-10: calc(10 * var(--spacing-1));
+  --spacing-12-5: calc(12.5 * var(--spacing-1));
+  --spacing-15: calc(15 * var(--spacing-1));
+
+  /** Скругления **/
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xxl: 32px;
+  --radius-round: 50%;
+
+  /** Тени **/
+  --shadow-sm: 0px -4px 16px rgba(31, 36, 43, 0.08);
+  --shadow-md: 0px 0px 20px rgba(31, 36, 43, 0.1);
+  --shadow-lg: -7px 0px 20px rgba(0, 0, 0, 0.06);
+  --shadow-xl: -8px 0px 20px rgba(0, 0, 0, 0.16);
+
+  /* Form Controls */
+  --control-height-lg: 40px;
+  --control-height-md: 32px;
+  --control-height-sm: 28px;
+}

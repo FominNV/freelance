@@ -1,0 +1,43 @@
+<template>
+  <g>
+    <circle
+      cx="16"
+      cy="64"
+      r="16"
+      fill="currentColor"
+      opacity="1"
+    />
+    <circle
+      cx="16"
+      cy="64"
+      r="16"
+      fill="currentColor"
+      transform="rotate(45,64,64)"
+      opacity="0.8"
+    />
+    <circle
+      cx="16"
+      cy="64"
+      r="16"
+      fill="currentColor"
+      transform="rotate(90,64,64)"
+      opacity="0.6"
+    />
+    <circle
+      cx="16"
+      cy="64"
+      r="16"
+      fill="currentColor"
+      transform="rotate(135,64,64)"
+      opacity="0.4"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64"
+      calcMode="discrete"
+      dur="720ms"
+      repeatCount="indefinite"
+    />
+  </g>
+</template>
