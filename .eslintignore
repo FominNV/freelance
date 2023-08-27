@@ -1,0 +1,9 @@
+node_modules
+*.log*
+.output
+.husky
+dist
+assets
+.DS_Store
+*.js*
+*vite.config.ts*
