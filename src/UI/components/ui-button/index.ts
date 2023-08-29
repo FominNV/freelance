@@ -1,2 +1,2 @@
-export { default as UiButton } from './rr-button.vue';
+export { default as UiButton } from './ui-button.vue';
 export type { ButtonThemesType } from './const';

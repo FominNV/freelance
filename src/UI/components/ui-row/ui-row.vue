@@ -30,7 +30,7 @@ const props = withDefaults(defineProps<RrRowPropsImpl>(), {
 const style = computed<string | undefined>(() => (props.gap ? `gap:var(--spacing-${props.gap}) 0` : undefined));
 
 const classes: ComputedRef<ClassPropsType> = computed<ClassPropsType>(() => [
-  'rr-row',
+  'ui-row',
   'row',
   {
     reverse: props.reverse,
@@ -41,7 +41,7 @@ const classes: ComputedRef<ClassPropsType> = computed<ClassPropsType>(() => [
 
 </script>
 <style>
-.rr-row.row {
+.ui-row.row {
   position: relative;
   --gutter-compensation: calc((var(--md-column-gutter-width) * 0.5) * -1);
 }
