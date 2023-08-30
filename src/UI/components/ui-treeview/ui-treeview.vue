@@ -69,7 +69,7 @@ import { IconsConfig } from '../../@types/icons-config';
 import { ColorNames } from '../../directives';
 import { ClassPropsType } from '../../@types/props';
 
-export interface RrTreeviewPropsImpl {
+export interface UiTreeviewPropsImpl {
   /** Модель treeview */
   modelValue: TreeViewNode[];
   /** Размер */
@@ -124,7 +124,7 @@ export interface RrTreeviewPropsImpl {
   pointer?: 'none' | 'groups' | 'nodes' | 'all';
 }
 
-const props = withDefaults(defineProps<RrTreeviewPropsImpl>(), {
+const props = withDefaults(defineProps<UiTreeviewPropsImpl>(), {
   size: 'lg',
   theme: 'default',
   pointer: 'all',

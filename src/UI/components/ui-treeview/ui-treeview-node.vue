@@ -137,7 +137,7 @@ import { ClassPropsType } from '../../@types/props';
 import { TreeViewNode } from './model';
 import { UiCheckbox } from '../ui-checkbox';
 
-export interface RrTreeViewNodePropsImpl {
+export interface UiTreeViewNodePropsImpl {
   /** Класс TreeViewNode с данными узла */
   node: TreeViewNode;
   /** Размер */
@@ -186,7 +186,7 @@ export interface RrTreeViewNodePropsImpl {
   pointer?: 'none' | 'groups' | 'nodes' | 'all';
 }
 
-const props = withDefaults(defineProps<RrTreeViewNodePropsImpl>(), {
+const props = withDefaults(defineProps<UiTreeViewNodePropsImpl>(), {
   level: 0,
   size: 'lg',
   pointer: 'all',

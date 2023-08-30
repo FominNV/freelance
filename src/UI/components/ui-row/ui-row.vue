@@ -13,7 +13,7 @@ import { computed, ComputedRef } from 'vue';
 import { ClassPropsType } from '@ui/@types/props';
 import { SpacingSizesType } from '@ui/composables/useSpacing';
 
-export interface RrRowPropsImpl {
+export interface UiRowPropsImpl {
   reverse?: boolean;
   /** горизонтальное выравнивание */
   justify?: 'start' | 'center' | 'end' | 'around' | 'between';
@@ -23,7 +23,7 @@ export interface RrRowPropsImpl {
   gap?: SpacingSizesType | null;
 }
 
-const props = withDefaults(defineProps<RrRowPropsImpl>(), {
+const props = withDefaults(defineProps<UiRowPropsImpl>(), {
   //
 });
 

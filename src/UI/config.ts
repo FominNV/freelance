@@ -62,6 +62,7 @@ class Config implements UiVuiLibConfig {
       },
     },
   };
+  
   readonly copy: CopyConfig = {
     adapter: new UiClipboardAdapter(),
   };

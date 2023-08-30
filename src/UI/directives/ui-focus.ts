@@ -13,7 +13,7 @@ function handler(el: HTMLElement, binding: any) {
   }
 }
 
-export const rrFocus = {
+export const uiFocus = {
   bind: handler,
   update: handler,
 };

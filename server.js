@@ -38,7 +38,7 @@ app.use("*", async (req, res) => {
     let template;
     let render;
     if (!isProduction) {
-      template = await fs.readFile("./public/index.html", "utf-8");
+      template = await fs.readFile("./index.html", "utf-8");
       template = await vite.transformIndexHtml(url, template);
       render = (await vite.ssrLoadModule("/src/entry-server.ts")).render;
     } else {

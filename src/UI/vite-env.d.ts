@@ -32,6 +32,7 @@ declare const TextColorNames = {
 declare type IconsNamesType = string;
 
 declare module 'vue-easytable';
+declare module 'vue3-easy.table';
 declare module 'vue-click-outside';
 declare module 'vue-input-autowidth';
 declare module 'vue2-datepicker';

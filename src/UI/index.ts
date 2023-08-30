@@ -1,36 +1,15 @@
-import { ObjectDirective, Component } from 'vue';
+// import { App } from 'vue';
+import components from './components';
+// import * as directives from './directives';
 
 
-import * as components from './components';
-import * as directives from './directives';
-import { install } from './install';
-import Config, { UiVuiLibConfig } from './config';
 
-export interface UiVuiLibUseOptions {
-  directives?: Record<string, ObjectDirective>;
-  components?: Record<string, Component>;
-  config?: UiVuiLibConfig;
-}
-
-
-export default class UIVuiLib {
-  static install = (Vue: any, options?: any) => {
-    Config.update(options);
-    install.call(this, Vue, {
-      components,
-      directives,
-      config: Config.toJSON(),
-    });
-  };
-
-  static installed = false;
-
-  static config = {
-    silent: false,
-  };
-
-  public installed: string[] = [];
-
+export default class UI {  
+  static install(vue: any) {
+    (Object.entries(components).forEach(([name, component]) => {
+      vue.component(name, component)
+    }));    
+  }
 }
 
 declare module 'vue' {
@@ -72,11 +51,5 @@ declare module 'vue' {
     UiRow: typeof components['UiRow'];
     UiAvatar: typeof components['UiAvatar'];
     UiCheckbox: typeof components['UiCheckbox'];
-  }
-}
-
-declare module 'vue/types/vue' {
-  export interface Vue {
-    $rrVui: UiVuiLibConfig
   }
 }

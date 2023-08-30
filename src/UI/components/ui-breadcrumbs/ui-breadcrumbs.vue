@@ -41,7 +41,7 @@
 
 <script setup lang="ts">
 import { BreadcrumbsItemImpl } from './BreadcrumbsImpl';
-import RrBreadcrumbsItem from './ui-breadcrumbs-item.vue';
+import UiBreadcrumbsItem from './ui-breadcrumbs-item.vue';
 
 export interface UiBreadcrumbPropsImpl {
   /** список элементов хлебных крошек */

@@ -8,7 +8,13 @@ const locals = { name: "My Pug" }
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), pugPlugin(options, locals)],
+  plugins: [vue({
+    template: {
+      compilerOptions: {
+        // isCustomElement: tag => tag.startsWith('ui-')
+      },
+    }
+  }), pugPlugin(options, locals)],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

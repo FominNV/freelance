@@ -22,7 +22,7 @@ import { useSize } from '@ui/composables/useSize';
 import { PropsSizeType } from '@ui/@types/size';
 import { SpinnerConfig } from '@ui/@types/spinner-config';
 
-export interface RrSpinnerPropsImpl {
+export interface UiSpinnerPropsImpl {
   /** размер загрузчика */
   size?: PropsSizeType<SpinnerSizesType>;
   /** тип загрузчика */
@@ -39,7 +39,7 @@ const templates: any = {
   'spinner-loader': () => import('./templates/ui-spinner-loader.vue'),
 };
 
-const props = withDefaults(defineProps<RrSpinnerPropsImpl>(), {
+const props = withDefaults(defineProps<UiSpinnerPropsImpl>(), {
   get type() {
     return (useConfigParam('spinner') as SpinnerConfig).defaultType;
   },

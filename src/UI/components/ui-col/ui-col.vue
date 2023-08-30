@@ -9,7 +9,7 @@
 import { computed, ComputedRef } from 'vue';
 import { ClassPropsType } from '../../@types/props';
 
-export interface RrColPropsImpl {
+export interface UiColPropsImpl {
   /** инверсия направления */
   reverse?: boolean;
   /** горизонтальное выравнивание */
@@ -30,7 +30,7 @@ export interface RrColPropsImpl {
   responsive?: string[];
 }
 
-const props = withDefaults(defineProps<RrColPropsImpl>(), {
+const props = withDefaults(defineProps<UiColPropsImpl>(), {
   size: 0,
 });
 

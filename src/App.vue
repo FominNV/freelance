@@ -1,6 +1,10 @@
 <template lang="pug">
 div
-  h1 Hello123
+  ui-button(text="ui-button" theme="primary")
+  ui-table(
+    :columns=[{id: 'name'}]
+    :items="[{name: 'Testing'}]"
+  )
 </template>
 
 <script setup lang="ts">

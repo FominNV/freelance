@@ -66,7 +66,7 @@ import { ClassPropsType } from '../../@types/props';
 import { PropsSizeType } from '../../@types/size';
 import { useConfigParam } from '../../lib/useConfigParam';
 import { AlertSizesType } from './const';
-import RrAlertControl from './ui-alert-control.vue';
+import UiAlertControl from './ui-alert-control.vue';
 
 export interface UiAlertPropsImpl {
   /** заголовок */

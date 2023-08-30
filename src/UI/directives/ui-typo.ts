@@ -1,4 +1,4 @@
-interface RrTypoOptions {
+interface UiTypoOptions {
   /** тип текста */
   type: 'title' | 'subtitle' | 'paragraph' | 'action',
   /** размер текста */
@@ -6,7 +6,7 @@ interface RrTypoOptions {
 }
 
 interface DirectiveBindindOptions {
-  value: RrTypoOptions;
+  value: UiTypoOptions;
 }
 
 function handler(el: HTMLElement, binding: DirectiveBindindOptions) {
@@ -26,7 +26,7 @@ function handler(el: HTMLElement, binding: DirectiveBindindOptions) {
  * Директива для смены типа/размера текста
  * @example v-ui-typo="{ type: 'title', size: 'sm' }"
  */
-export const RrTypo = {
+export const UiTypo = {
   bind: handler,
   update: handler,
 };

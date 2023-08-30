@@ -24,7 +24,7 @@ function handler(el: HTMLElement, binding: any) {
  * Директива для смены цвета текста и фона конпонента
  * @example  v-ui-color:text="'primary-400'" v-ui-color:bg="'neutral-300'"
  */
-export const RrColor = {
+export const UiColor = {
   bind: handler,
   update: handler,
 };

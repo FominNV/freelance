@@ -1,2 +1,2 @@
-export { default as UirBreadcrumbs } from './ui-breadcrumbs.vue';
+export { default as UiBreadcrumbs } from './ui-breadcrumbs.vue';
 export * from './BreadcrumbsImpl';
