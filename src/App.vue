@@ -1,12 +1,8 @@
 <template lang="pug">
-div
-  ui-button(text="ui-button" theme="primary")
-  ui-table(
-    :columns=[{id: 'name'}]
-    :items="[{name: 'Testing'}]"
-  )
+DefaultLayout
 </template>
 
 <script setup lang="ts">
+import DefaultLayout from './layouts/DefaultLayout.vue'
 </script>
 
